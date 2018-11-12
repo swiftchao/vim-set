@@ -212,10 +212,10 @@ set confirm
 set autoindent
 set cindent
 " Tab键的宽度
-set tabstop=2
+set tabstop=4
 " 统一缩进为4
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
 " 不要用空格代替制表符
 "set noexpandtab
 " 在行和段开始处使用制表符
@@ -233,7 +233,7 @@ set noswapfile
 set hlsearch
 set incsearch
 "行内替换
-set gdefault
+"set gdefault
 "编码设置
 set enc=utf-8
 set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
