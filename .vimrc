@@ -5,18 +5,12 @@ func! SaveInputData()
     exec "w! /tmp/input_data"
 endfunc
 
-
-
-
 "colorscheme torte
 "colorscheme murphy
 "colorscheme desert 
 "colorscheme desert 
 "colorscheme elflord
 colorscheme ron
-
-
-
 
 "set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 "set termencoding=utf-8
@@ -78,14 +72,14 @@ func SetTitle()
         call append(line(".")+6, "") 
     "如果文件类型为.py文件
     elseif &filetype == 'python'
-        call setline(1,"\#########################################################################") 
-        call append(line("."), "\# File Name: ".expand("%")) 
-        call append(line(".")+1, "\# Author: chaofei") 
-        call append(line(".")+2, "\# mail: chaofeibest@163.com") 
-        call append(line(".")+3, "\# Created Time: ".strftime("%Y-%m-%d %H:%M:%S")) 
-        call append(line(".")+4, "\#########################################################################") 
-        call append(line(".")+5, "\#!/usr/bin/env python") 
-        call append(line(".")+6, "\# -*- coding: utf-8 -*-") 
+        call setline(1, "\#!/usr/bin/env python") 
+        call append(line("."), "\# -*- coding: utf-8 -*-") 
+        call append(line(".")+1, "\#########################################################################") 
+        call append(line(".")+2, "\# File Name: ".expand("%")) 
+        call append(line(".")+3, "\# Author: chaofei") 
+        call append(line(".")+4, "\# mail: chaofeibest@163.com") 
+        call append(line(".")+5, "\# Created Time: ".strftime("%Y-%m-%d %H:%M:%S")) 
+        call append(line(".")+6, "\#########################################################################") 
         call append(line(".")+7, "") 
     else 
         call setline(1, "/*************************************************************************")
@@ -168,8 +162,6 @@ func! Rungdb()
     exec "!g++ % -g -o %<"
     exec "!gdb ./%<"
 endfunc
-
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""实用设置
@@ -304,11 +296,6 @@ filetype plugin indent on
 "打开文件类型检测, 加了这句才可以用智能补全
 set completeopt=longest,menu
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
-
-
 
 "NERDtee设定
 let NERDChristmasTree=1
