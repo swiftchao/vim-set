@@ -205,10 +205,10 @@ set confirm
 set autoindent
 set cindent
 " Tab键的宽度
-set tabstop=2
-" 统一缩进为2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+" 统一缩进为4
+set softtabstop=4
+set shiftwidth=4
 " 用空格替代制表符
 set expandtab
 " 不要用空格代替制表符
